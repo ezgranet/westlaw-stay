@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Westlaw Session Keeper",
+  "version": "1.0",
+  "description": "Keeps your Westlaw session alive by simulating minimal activity.",
+  "permissions": ["scripting", "storage"],
+  "host_permissions": ["*://*.westlaw.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Westlaw Session Keeper",
+    "default_icon": {
+      "16": "icon128.png",
+      "32": "icon128.png",
+      "48": "icon128.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon128.png",
+    "32": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.westlaw.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

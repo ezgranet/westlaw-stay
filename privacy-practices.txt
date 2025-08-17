@@ -1,0 +1,8 @@
+This extension does not collect, store, or transmit any personal data.
+
+It does not use cookies, analytics, or external servers. 
+The extension only runs a simple script that simulates small user interactions 
+(mousemove or scroll events) directly inside the current Westlaw tab.
+
+All activity happens locally in the user’s browser. 
+No information ever leaves the device.
